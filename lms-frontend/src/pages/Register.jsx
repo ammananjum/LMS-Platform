@@ -20,7 +20,7 @@ function Register() {
     setError("");
 
     try {
-      const res = await fetch("http://localhost:5000/api/auth/register", {
+      const res = await fetch("https://1380d7e0-b4ab-4633-b803-22248736a8d2-00-1de9a8l5srkwr.sisko.replit.dev/api/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -44,7 +44,7 @@ function Register() {
 
   return (
     <div className="min-h-screen flex bg-white">
-      {/* 🔵 Left: Form Section */}
+      {/* Left: Form Section */}
       <div className="w-full md:w-1/2 flex justify-center items-center px-6">
         <form
           onSubmit={handleSubmit}
@@ -112,7 +112,7 @@ function Register() {
         </form>
       </div>
 
-      {/* 🖼️ Right: Image Section */}
+      {/*  Right: Image Section */}
       <div className="hidden md:block md:w-1/2">
         <img
           src="/background.png" // Replace this with your actual illustration name
