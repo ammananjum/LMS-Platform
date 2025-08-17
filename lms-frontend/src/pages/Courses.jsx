@@ -11,7 +11,7 @@ function Courses() {
     const token = localStorage.getItem("token");
     if (!token) return;
 
-    fetch("http://localhost:5000/api/dashboard/enrolled", {
+    fetch("https://1380d7e0-b4ab-4633-b803-22248736a8d2-00-1de9a8l5srkwr.sisko.replit.dev/api/dashboard/enrolled", {
       headers: { Authorization: `Bearer ${token}` },
     })
       .then((res) => res.json())
@@ -30,7 +30,7 @@ function Courses() {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/enroll", {
+      const res = await fetch("https://1380d7e0-b4ab-4633-b803-22248736a8d2-00-1de9a8l5srkwr.sisko.replit.dev/api/enroll", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
