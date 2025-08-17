@@ -19,7 +19,7 @@ function Login() {
     setError("");
 
     try {
-      const res = await fetch("http://localhost:5000/api/auth/login", {
+      const res = await fetch("https://1380d7e0-b4ab-4633-b803-22248736a8d2-00-1de9a8l5srkwr.sisko.replit.dev/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -53,7 +53,7 @@ function Login() {
         >
           <div className="flex justify-center mb-4">
             <img
-              src="/login.gif" // Put this image in public/
+              src="/login.gif" 
               alt="Login"
               className="w-24 h-24 object-cover rounded-full border-4 border-purple-700 shadow-md"
             />
