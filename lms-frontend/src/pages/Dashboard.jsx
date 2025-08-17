@@ -19,7 +19,7 @@ function Dashboard() {
       }
 
       try {
-        const res = await axios.get("http://localhost:5000/api/dashboard/enrolled-courses", {
+        const res = await axios.get("https://1380d7e0-b4ab-4633-b803-22248736a8d2-00-1de9a8l5srkwr.sisko.replit.dev/api/dashboard/enrolled-courses", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setEnrolledCourses(res.data);
@@ -81,7 +81,7 @@ function Dashboard() {
             ))}
           </div>
 
-          {/* ✅ Bottom Buttons */}
+          {/* Bottom Buttons */}
           <div className="flex justify-center gap-6">
             <button
               onClick={() => navigate("/courses")}
