@@ -13,7 +13,7 @@ function Quiz() {
   const fetchQuiz = async () => {
     try {
       const token = localStorage.getItem("token"); // get JWT from storage
-      const res = await axios.get(`http://localhost:5000/api/quizzes/${courseId}`, {
+      const res = await axios.get(`https://1380d7e0-b4ab-4633-b803-22248736a8d2-00-1de9a8l5srkwr.sisko.replit.dev/api/quizzes/${courseId}`, {
         headers: {
           Authorization: `Bearer ${token}` // send token in headers
         }
