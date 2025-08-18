@@ -1,7 +1,7 @@
 // src/pages/Login.jsx
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { supabase } from '../supabaseClient';
+
 
 function Login() {
   const [formData, setFormData] = useState({
