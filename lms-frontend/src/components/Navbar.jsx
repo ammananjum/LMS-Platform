@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { supabase } from '../supabaseClient';
+
 function Navbar() {
   const [username, setUsername] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
