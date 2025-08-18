@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"; 
-import { supabase } from '../supabaseClient';
+
 function Home() {
   const categories = [
     { name: "Web Development", image: "web.jpg" },
