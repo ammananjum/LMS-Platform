@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import courses from "../data/courses";
 import { useState, useEffect } from "react";
+import { supabase } from './supabaseClient';
 
 function Courses() {
   const [enrolled, setEnrolled] = useState([]);
