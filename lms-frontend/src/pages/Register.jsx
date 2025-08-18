@@ -1,7 +1,6 @@
 // src/pages/Register.jsx
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { supabase } from '../supabaseClient';
 
 function Register() {
   const navigate = useNavigate();
