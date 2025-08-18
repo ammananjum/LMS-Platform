@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { supabase } from './supabaseClient';
+import { supabase } from '../supabaseClient';
 
 function Dashboard() {
   const [enrolledCourses, setEnrolledCourses] = useState([]);
